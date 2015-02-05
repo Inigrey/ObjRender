@@ -41,8 +41,7 @@ public class Model {
 	 */
 	public Model(Frame[] frames) {
 		this();
-		for (int i=0;i<frames.length;i++)
-			addFrame(frames[i]);
+        for (Frame frame : frames) addFrame(frame);
 		this.animations = Animation.buildAnimationsHeuristic(this, frames, 15);
 	}
 
